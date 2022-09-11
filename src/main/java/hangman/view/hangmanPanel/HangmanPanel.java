@@ -3,15 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package hangman.view;
+package hangman.view.hangmanPanel;
 
 import java.awt.Graphics;
 import javax.swing.JPanel;
 
-/**
- *
- * @author 2106913
- */
+import com.google.inject.ImplementedBy;
+
 public abstract class HangmanPanel extends JPanel{
      @Override
      public void paint(Graphics g){

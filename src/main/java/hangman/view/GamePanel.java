@@ -13,7 +13,10 @@
 package hangman.view;
 
 import com.google.inject.Inject;
-import hangman.model.Language;
+
+import hangman.model.language.Language;
+import hangman.view.hangmanPanel.HangmanPanel;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Font;

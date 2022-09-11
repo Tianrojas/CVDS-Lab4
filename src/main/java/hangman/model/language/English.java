@@ -3,17 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package hangman.model;
+package hangman.model.language;
 
 /**
  *
  * @author 2106913
  */
-public class French implements Language{
+public class English implements Language{
 
     @Override
     public String[] getFunctionControllerNames() {
-        return new String[]{"Jouer","Score Èlevé","Crédits"};
+        return new String[]{"Play","HighScores","Crédits"};
     }
 
     @Override
@@ -23,22 +23,22 @@ public class French implements Language{
 
     @Override
     public String getHangmanLabel() {
-        return "Bourreau";
+        return "Hangman";
     }
 
     @Override
     public String[] getBackSkypeButtonLabel() {
-        return new String[]{"Arrière","Sauter"};
+        return new String[]{"Back","Skip"};
     }
 
     @Override
     public String[] getAccesButton() {
-        return new String[]{"Jeu terminé!","Nouveau Jeu","Menu principal"};
+        return new String[]{"Game Over!","New Game","Main Menu"};
     }
 
     @Override
     public String getFinalScorelabel() {
-        return "Score Final: ";
+        return "Final Score: ";
     }
     
 }

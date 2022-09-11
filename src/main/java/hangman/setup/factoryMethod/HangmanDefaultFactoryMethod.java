@@ -1,11 +1,11 @@
 package hangman.setup.factoryMethod;
 
-import hangman.model.English;
-import hangman.model.Language;
 import hangman.model.dictionary.EnglishDictionaryDataSource;
 import hangman.model.dictionary.HangmanDictionary;
-import hangman.view.HangmanPanel;
-import hangman.view.HangmanStickmanPanel;
+import hangman.model.language.English;
+import hangman.model.language.Language;
+import hangman.view.hangmanPanel.HangmanPanel;
+import hangman.view.hangmanPanel.HangmanStickmanPanel;
 
 public class HangmanDefaultFactoryMethod extends HangmanFactoryMethod {
     @Override

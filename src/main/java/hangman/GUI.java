@@ -4,8 +4,11 @@ import com.google.inject.Inject;
 import hangman.controller.*;
 import hangman.model.*;
 import hangman.model.dictionary.HangmanDictionary;
+import hangman.model.language.Language;
 import hangman.setup.factoryMethod.HangmanFactoryMethod;
+import hangman.setup.guice.factories.*;
 import hangman.view.*;
+import hangman.view.hangmanPanel.HangmanPanel;
 
 import java.awt.*;
 
@@ -57,6 +60,8 @@ public class GUI {
         this.dictionary= dictionary;
         this.hangmanPanel = hangmanPanel;
     }
+    
+    
 
     //method: setup
     //purpose: Create the various panels (game screens) for our game

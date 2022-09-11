@@ -25,7 +25,7 @@ import javax.swing.event.AncestorListener;
 import hangman.GUI;
 import hangman.SwingProject;
 import hangman.model.GameModel;
-import hangman.model.Language;
+import hangman.model.language.Language;
 import hangman.view.GamePanel;
 
 public class GameController{

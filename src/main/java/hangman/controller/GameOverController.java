@@ -22,7 +22,7 @@ import javax.swing.event.AncestorListener;
 import hangman.GUI;
 import hangman.SwingProject;
 import hangman.model.GameOverModel;
-import hangman.model.Language;
+import hangman.model.language.Language;
 import hangman.view.GameOverPanel;
 
 public class GameOverController {

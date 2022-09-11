@@ -13,9 +13,16 @@
 package hangman.model;
 
 import hangman.model.dictionary.HangmanDictionary;
+import hangman.model.gameScore.*;
+import hangman.setup.guice.factories.GameScoreFactory;
+import hangman.setup.guice.factories.LanguageFactory;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
+
+import com.google.inject.Inject;
+import com.google.inject.name.Named;
 
 
 public class GameModel {
@@ -25,12 +32,16 @@ public class GameModel {
     private int gameScore;
     private int[] lettersUsed;
     
-    
     private HangmanDictionary dictionary;
     
     private Scanner scan;
     private String randomWord;
     private char[] randomWordCharArray;
+    private GameScore gameInterScore;
+    
+    @Inject
+	private GameScoreFactory scoreFact;
+    
     
     
    
@@ -41,8 +52,8 @@ public class GameModel {
         randomWordCharArray = randomWord.toCharArray();
         incorrectCount = 0;
         correctCount = 0;
-        gameScore = 100;
-        
+        gameInterScore = scoreFact.getGameScore("OS");
+        gameScore = gameInterScore.calculateScore(correctCount, incorrectCount); //here starts the game score <----
     }
     
     //method: reset
@@ -52,7 +63,7 @@ public class GameModel {
         randomWordCharArray = randomWord.toCharArray();
         incorrectCount = 0;
         correctCount = 0;
-        gameScore = 100;
+        gameScore = gameInterScore.calculateScore(correctCount, incorrectCount); //the reset value <----
     }
 
     //setDateTime
@@ -73,10 +84,11 @@ public class GameModel {
             }
         }
         if(positions.size() == 0){
-            incorrectCount++;
-            gameScore -= 10;
+            incorrectCount++; // Here we set decrease value <----
+            gameScore = gameInterScore.calculateScore(correctCount, incorrectCount);
         } else {
-            correctCount += positions.size();
+            correctCount += positions.size();  // Here we set the increase value <----
+            gameScore = gameInterScore.calculateScore(correctCount, incorrectCount);
         }
         return positions;
         

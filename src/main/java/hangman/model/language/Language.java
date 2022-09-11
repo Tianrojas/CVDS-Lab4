@@ -3,12 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package hangman.model;
+package hangman.model.language;
 
-/**
- *
- * @author 2106913
- */
+import com.google.inject.ImplementedBy;
+
 public interface Language {
     
     public String[] getFunctionControllerNames();

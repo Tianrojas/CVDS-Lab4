@@ -1,8 +1,8 @@
 package hangman.setup.factoryMethod;
 
-import hangman.model.Language;
 import hangman.model.dictionary.HangmanDictionary;
-import hangman.view.HangmanPanel;
+import hangman.model.language.Language;
+import hangman.view.hangmanPanel.HangmanPanel;
 
 abstract public class HangmanFactoryMethod {
     abstract public Language createLanguage();

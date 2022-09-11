@@ -9,7 +9,7 @@
 * purpose: This is the view component for displaying a hangman game
 *
 ****************************************************************/ 
-package hangman.view;
+package hangman.view.hangmanPanel;
 
 import java.awt.BasicStroke;
 import java.awt.Graphics;

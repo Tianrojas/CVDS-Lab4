@@ -14,7 +14,9 @@
 package hangman.view;
 
 import com.google.inject.Inject;
-import hangman.model.Language;
+
+import hangman.model.language.Language;
+
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Font;

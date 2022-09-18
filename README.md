@@ -133,19 +133,30 @@ Solución
 ---
 
 
-* Para iniciar se crearon las respectivas clases y se colocaron en paquetes para facilitar el orden e identificación \ ![1](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/1.png)
+* Para iniciar se crearon las respectivas clases y se colocaron en paquetes para facilitar el orden e identificación
+    ![1](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/1.png)
 
-* Luego en lac clase principal se realiza el cambio al constructor prederteminado para el GUI usando Guice \ ![2](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/2.png)
+* Luego en lac clase principal se realiza el cambio al constructor prederteminado para el GUI usando Guice
+    ![2](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/2.png)
 
-* Se realizan las clases enumerables para los objetos a injectar \ ![3](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/2.png)
+* Se realizan las clases enumerables para los objetos a injectar
+    ![3](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/2.png)
 
-* Creando asi los respectivos bindings en la clase `HangmanFactoryServices` \ ![4](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/4.png)
+* Creando asi los respectivos bindings en la clase `HangmanFactoryServices`
+    ![4](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/4.png)
 
-* Luego se prosiguio a crear las interfaces para ingresar data dentro de cada uno de los diferentes factories \ ![5](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/5.png) \ ![6](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/6.png) \ ![7](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/7.png) \ ![8](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/8.png)
+* Luego se prosiguio a crear las interfaces para ingresar data dentro de cada uno de los diferentes factories ![5](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/5.png) ![6](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/6.png) ![7](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/7.png) ![8](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/8.png)
 
-* Continuando asi con la contruccion de los respectivos Factories \ ![9](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/9.png) \ ![10](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/10.png) \ ![11](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/11.png) \ ![12](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/12.png)
+* Continuando asi con la contruccion de los respectivos Factories
+      ![9](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/9.png) ![10](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/10.png) ![11](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/11.png) ![12](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/12.png)
 
-* Se realiza una clase injectora para asignar valores \ ![13](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/12.png)
+* Se realiza una clase injectora para asignar valores
+      ![13](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/12.png)
 
+* Ejemplos
+   * Utilizar el esquema OriginalScore.
+   * Utilizar el esquema BonusScore.
+   * Utilizar el idioma francés.
+   * Utilizar el diccionario francés.
 
 

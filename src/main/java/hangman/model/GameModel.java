@@ -49,7 +49,11 @@ public class GameModel {
 		incorrectCount = 0;
 		correctCount = 0;
 		gameInterScore = scoreFact.getGameScore("OS"); // <------------------- Frabric Injecter
-		gameScore = gameInterScore.calculateScore(correctCount, incorrectCount); // here starts the game score <----
+		try {
+			gameScore = gameInterScore.calculateScore(correctCount, incorrectCount);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	// method: reset
@@ -59,7 +63,11 @@ public class GameModel {
 		randomWordCharArray = randomWord.toCharArray();
 		incorrectCount = 0;
 		correctCount = 0;
-		gameScore = gameInterScore.calculateScore(correctCount, incorrectCount); // the reset value <----
+		try {
+			gameScore = gameInterScore.calculateScore(correctCount, incorrectCount);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	// setDateTime
@@ -81,10 +89,18 @@ public class GameModel {
 		}
 		if (positions.size() == 0) {
 			incorrectCount++; // Here we set decrease value <----
-			gameScore = gameInterScore.calculateScore(correctCount, incorrectCount);
+			try {
+				gameScore = gameInterScore.calculateScore(correctCount, incorrectCount);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		} else {
 			correctCount += positions.size(); // Here we set the increase value <----
-			gameScore = gameInterScore.calculateScore(correctCount, incorrectCount);
+			try {
+				gameScore = gameInterScore.calculateScore(correctCount, incorrectCount);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
 		return positions;
 

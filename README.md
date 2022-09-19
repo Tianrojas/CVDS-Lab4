@@ -138,9 +138,7 @@ Incorpore el Contenedor Liviano Guice dentro del proyecto:
   referencia](https://github.com/PDSW-ECI/LightweighContainers_DepenendecyInjectionIntro-WordProcessor).
 
 
-Solución
----
-
+### Parte II - Solución
 
 * Para iniciar se crearon las respectivas clases y se colocaron en paquetes para facilitar el orden e identificación
     ![1](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/1.png)

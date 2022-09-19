@@ -51,6 +51,9 @@ principio de inversión de dependencias:
    variantes de GameScore), a partir de las especificaciones
    generales dadas anteriormente. Recuerde tener en cuenta: @pre,
    @pos, @param, @throws.
+   
+   Para cada caso se realizo su documentación \
+   ![image](https://user-images.githubusercontent.com/62759668/190934928-fbae1245-e58f-4a78-a5a1-ae2a32b03bc2.png)
 
 4. Haga commit de lo realizado hasta ahora. Desde la terminal:
 
@@ -59,7 +62,9 @@ principio de inversión de dependencias:
 	git commit -m "especificación métodos"
 	```
 
-5. Actualice el archivo `pom.xml` e incluya las dependencias para la ultima versión de JUnit y la versión del compilador de Java a la versión 8 .
+5. Actualice el archivo `pom.xml` e incluya las dependencias para la ultima versión de JUnit y la versión del compilador de Java a la versión 8.
+   Se añaden las dependencias de JUnite y Juice \
+   ![image](https://user-images.githubusercontent.com/62759668/190934982-f394e115-ae9c-4202-a481-49700fc8b0f1.png)
    
 
 6. Teniendo en cuenta dichas especificaciones, en la clase donde se
@@ -67,6 +72,10 @@ principio de inversión de dependencias:
    comentarios iniciales, especifique las clases de equivalencia para
    las tres variantes de GameScore, e identifique
    condiciones de frontera. 
+   Las clases de equivalencia vendrían a ser las siguientes: \
+   ![image](https://user-images.githubusercontent.com/62759668/190935014-f4e2b90d-86f8-441d-b568-af2b5aeb7aab.png)
+   ![image](https://user-images.githubusercontent.com/62759668/190935028-914cb732-4bd9-4a81-9adb-b36062696c17.png)
+   ![image](https://user-images.githubusercontent.com/62759668/190935044-3bd5a096-4a8c-4f13-a8bb-88c6ce2a3a73.png)
 
 7. Para cada clase de equivalencia y condición de frontera, implemente
    una prueba utilizando JUnit.
@@ -153,10 +162,10 @@ Solución
 * Se realiza una clase injectora para asignar valores
       ![13](https://github.com/Tianrojas/CVDS-Lab4/blob/master/img/12.png)
 
-* Ejemplos
-   * Utilizar el esquema OriginalScore.
-   * Utilizar el esquema BonusScore.
-   * Utilizar el idioma francés.
-   * Utilizar el diccionario francés.
+* Pruebas\
+	![image](https://user-images.githubusercontent.com/62759668/190935143-7e882cd2-9885-4502-8cbd-5b08f0797118.png)
+	![image](https://user-images.githubusercontent.com/62759668/190935322-fc778785-33cd-4423-9f4d-d945a2263212.png)
+
+
 
 

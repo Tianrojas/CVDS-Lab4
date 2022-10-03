@@ -12,7 +12,7 @@ public class PowerScore implements GameScore {
      * @param correctCount, int  that represents the correct attempts of the player
      * @param incorrectCount, int that represents the incorrect attempts of the player
      * @return int ,that represents the score of the match
-     * @throws Throws an exception if some of the count numbers are negative
+     * @throws Throws an exception if some count numbers are negative
      */
 	@Override
 	public int calculateScore(int correctCount, int incorrectCount) throws Exception {

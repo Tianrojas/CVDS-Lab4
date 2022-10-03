@@ -5,8 +5,10 @@
  */
 package hangman.model.language;
 
-import com.google.inject.ImplementedBy;
-
+/**
+ *
+ * @author 2106913
+ */
 public interface Language {
     
     public String[] getFunctionControllerNames();

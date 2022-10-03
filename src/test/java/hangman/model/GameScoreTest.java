@@ -1,14 +1,14 @@
 package hangman.model;
 
 import org.junit.Test;
-import hangman.model.*;
+import hangman.model.gameScore.*;
 import org.junit.Assert;
 
 public class GameScoreTest {
 	// arrange
-	private GameScore original = new OriginalScore();
-	private GameScore bonus = new BonusScore();
-	private GameScore power = new PowerScore();
+	private final GameScore original = new OriginalScore();
+	private final GameScore bonus = new BonusScore();
+	private final GameScore power = new PowerScore();
 
 	// -------------------------------OriginalScore----------------------------
 
@@ -24,7 +24,7 @@ public class GameScoreTest {
 	}
 
 	@Test
-	public void GivenNoActionThenReturnOriginalScore() throws GameScoreException {
+	public void GivenNoActionThenReturnOriginalScore() throws Exception {
 		// Act
 		int score = original.calculateScore(100, 0);
 		// Assert
@@ -33,7 +33,7 @@ public class GameScoreTest {
 	}
 
 	@Test
-	public void GivenNormalValuesThenActNormal1() throws GameScoreException {
+	public void GivenNormalValuesThenActNormal1() throws Exception {
 		// Act
 		int score = original.calculateScore(0, 5);
 		// Assert
@@ -42,7 +42,7 @@ public class GameScoreTest {
 	}
 
 	@Test
-	public void GivenNormalValuesThenActNormal2() throws GameScoreException {
+	public void GivenNormalValuesThenActNormal2() throws Exception {
 		// Act
 		int score = original.calculateScore(0, 10);
 		// Assert
@@ -52,7 +52,7 @@ public class GameScoreTest {
 
 	// Limit test with incorrectCount = 10
 	@Test
-	public void GivenNormalValuesThenShouldMini1() throws GameScoreException {
+	public void GivenNormalValuesThenShouldMini1() throws Exception {
 		// Act
 		int score = original.calculateScore(26, 11);
 		// Assert
@@ -61,7 +61,7 @@ public class GameScoreTest {
 	}
 
 	@Test
-	public void GivenNormalValuesThenShouldMini2() throws GameScoreException {
+	public void GivenNormalValuesThenShouldMini2() throws Exception {
 		// Act
 		int score = original.calculateScore(34, 40);
 		// Assert
@@ -82,7 +82,7 @@ public class GameScoreTest {
 	}
 
 	@Test
-	public void GivenNoActionThenReturnOriginalScore12() throws GameScoreException {
+	public void GivenNoActionThenReturnOriginalScore12() throws Exception {
 		// Act
 		int score = bonus.calculateScore(10, 20);
 		// Assert
@@ -91,7 +91,7 @@ public class GameScoreTest {
 	}
 
 	@Test
-	public void GivenNormalValuesThenShouldMini12() throws GameScoreException {
+	public void GivenNormalValuesThenShouldMini12() throws Exception {
 		// Act
 		int score = bonus.calculateScore(0, 0);
 		// Assert
@@ -100,7 +100,7 @@ public class GameScoreTest {
 	}
 
 	@Test
-	public void GivenNormalValuesThenShouldMini22() throws GameScoreException {
+	public void GivenNormalValuesThenShouldMini22() throws Exception {
 		// Act
 		int score = bonus.calculateScore(20, 20);
 		// Assert
@@ -122,15 +122,15 @@ public class GameScoreTest {
 
 	// Limit test with incorrectCount = 0 ^ correctCount = 4
 	@Test
-	public void GivenNoActionThenReturnOriginalScore13() throws GameScoreException {
+	public void GivenNoActionThenReturnOriginalScore13() throws Exception {
 		// Act
 		int score = power.calculateScore(4, 0);
 		// Assert
-		Assert.assertTrue(score == 500);
+		Assert.assertEquals(500, score);
 	}
 
 	@Test
-	public void GivenNormalValuesThenShouldMini13() throws GameScoreException {
+	public void GivenNormalValuesThenShouldMini13() throws Exception {
 		// Act
 		int score = power.calculateScore(0, 15);
 		// Assert
@@ -139,7 +139,7 @@ public class GameScoreTest {
 	}
 
 	@Test
-	public void GivenNormalValuesThenShouldMini23() throws GameScoreException {
+	public void GivenNormalValuesThenShouldMini23() throws Exception {
 		// Act
 		int score = power.calculateScore(4, 63);
 		// Assert

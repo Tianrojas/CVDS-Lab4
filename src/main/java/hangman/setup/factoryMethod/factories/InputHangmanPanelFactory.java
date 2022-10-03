@@ -1,12 +1,10 @@
-package hangman.setup.guice.factories;
-
-import java.util.Map;
+package hangman.setup.factoryMethod.factories;
 
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
-
 import hangman.setup.guice.HangmanFactoryServices.panelOption;
 import hangman.view.hangmanPanel.HangmanPanel;
+import java.util.Map;
 
 @Singleton
 public class InputHangmanPanelFactory implements HangmanPanelFactory {
@@ -19,7 +17,7 @@ public class InputHangmanPanelFactory implements HangmanPanelFactory {
 	}
 
 	@Override
-	public HangmanPanel getHangmanPanel(String value) {
+	public HangmanPanel getHagnmanPanel(String value) {
 		HangmanPanel gst = null;
 		if (value.equals("CP")) {
 			gst = mapBinderPanel.get(panelOption.HangmanColoridoPanel);

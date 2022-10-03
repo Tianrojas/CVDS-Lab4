@@ -5,10 +5,8 @@
  */
 package hangman.view.hangmanPanel;
 
-import java.awt.Graphics;
-import javax.swing.JPanel;
-
-import com.google.inject.ImplementedBy;
+import javax.swing.*;
+import java.awt.*;
 
 public abstract class HangmanPanel extends JPanel{
      @Override

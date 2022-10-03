@@ -9,7 +9,7 @@ package hangman.model.language;
  *
  * @author 2106913
  */
-public class French implements Language{
+public class French implements Language {
 
     @Override
     public String[] getFunctionControllerNames() {

@@ -1,25 +1,41 @@
 package hangman.setup.factoryMethod;
 
-import hangman.model.dictionary.EnglishDictionaryDataSource;
-import hangman.model.dictionary.HangmanDictionary;
-import hangman.model.language.English;
+import com.google.inject.Inject;
+import hangman.model.gameScore.GameScore;
 import hangman.model.language.Language;
+import hangman.model.dictionary.HangmanDictionary;
 import hangman.view.hangmanPanel.HangmanPanel;
-import hangman.view.hangmanPanel.HangmanStickmanPanel;
+import hangman.setup.factoryMethod.factories.*;
+
 
 public class HangmanDefaultFactoryMethod extends HangmanFactoryMethod {
+    @Inject
+    private LanguageFactory lanFact;
+
+    @Inject
+    private HangmanDictionaryFactory dictFact;
+
+    @Inject
+    private HangmanPanelFactory panlFact;
+
+    @Inject
+    private GameScoreFactory scoreFactory;
+
     @Override
     public Language createLanguage() {
-        return new English();
+        return lanFact.getLanguage("FR");
     }
 
     @Override
-    public HangmanDictionary createDictionary() {
-        return new EnglishDictionaryDataSource();
-    }
+    public HangmanDictionary createDictionary() { return dictFact.getHangmanDictionary("SD");}
 
     @Override
     public HangmanPanel createHangmanPanel() {
-        return new HangmanStickmanPanel();
+        return panlFact.getHagnmanPanel("CP");
+    }
+
+    @Override
+    public GameScore createHangmanScore() {
+        return scoreFactory.getGameScore("QS");
     }
 }

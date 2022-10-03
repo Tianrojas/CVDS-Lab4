@@ -12,8 +12,6 @@
 ****************************************************************/ 
 package hangman.model;
 
-import com.google.inject.Inject;
-
 import hangman.model.language.Language;
 
 import java.awt.Color;

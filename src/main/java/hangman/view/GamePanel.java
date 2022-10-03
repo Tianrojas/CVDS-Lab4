@@ -12,8 +12,6 @@
 ****************************************************************/ 
 package hangman.view;
 
-import com.google.inject.Inject;
-
 import hangman.model.language.Language;
 import hangman.view.hangmanPanel.HangmanPanel;
 

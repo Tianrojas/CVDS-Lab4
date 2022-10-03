@@ -12,9 +12,7 @@
 package hangman.view;
 
 import com.google.inject.Inject;
-
 import hangman.model.language.Language;
-
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.GridBagConstraints;

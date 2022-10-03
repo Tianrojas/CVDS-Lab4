@@ -13,8 +13,6 @@
 ****************************************************************/ 
 package hangman.model;
 
-import com.google.inject.Inject;
-
 import hangman.model.language.Language;
 
 public class GameOverModel {
